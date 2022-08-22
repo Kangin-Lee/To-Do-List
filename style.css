@@ -7,114 +7,112 @@ body{
     font-family: 'Exo 2', sans-serif;
 }
 
-.input-area input{
-    width: 190px;
-    border-radius: 3px;
-    border: 3px solid beige;
-    outline: none;
-    margin-bottom: 20px;
-    margin-left: 3px;
-}
-
-.input-area button{
-    background-color: beige;
-    border: 3px solid beige;
-    border-radius: 3px;
-}
 .container{
     background-color: white;
     min-height: 100vh;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    border-top: 15px solid beige;
+    border-top:10px solid beige;
+}
+h1{
+    margin: 15px 0;
+    
+}
+.fa-pencil{
+    margin-right: 3px;
 }
 
-.task-area{
-    border: 1px solid #bcbabb;
+#user-input{
     border-radius: 3px;
+    border: 3px solid beige;
+    outline: none;
 }
 
-#under-line{
-    height: 5px;
-    width: 63px;
-    background-color: rgb(250, 201, 209);
-    position: absolute;
-    top: 065px;
-    left: 0px;
-    padding: 0;
-    border-radius: 50px;
-    transition: 0.5s;
+#plus-btn{
+    border-radius: 3px;
+    border: 3px solid beige;
+    background-color: beige;
 }
 
-.task-tabs{
+.tabs{ 
     display: flex;
-    border-bottom: 1px solid #bcbabb;
+    border-bottom: 1px solid lightgray;
     position: relative;
 }
 
-.task-tabs div{
-    padding: 20px;
-    font-size: 20px;
+.tabs div{
+    padding: 1em;
     cursor: pointer;
 }
 
-.task-tabs div:hover{
-    background-color: rgba(128, 128, 128, 0.212);
-    transition: 0.4s;
+.tabs div:hover{
+    background-color: rgba(211, 211, 211, 0.466);
 }
 
-.task{
+#task-area{
+    margin-top: 1.5em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+.task-area{
     display: flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.list-area .icon-box{
+    display: flex;
     align-items: center;
 }
 
-.task div:nth-child(2){
-    display: flex;
-}
-.task button:nth-child(1){
-    color: #4caf50;
-    background-color: white;
-    border: none;
-    width: 65px;
-    height: 51px;
+.list-area .fa-check{
+    color: #008000;
 }
 
-.task button .fa-solid{
-    font-size: 20px;
+.icon-box div:nth-child(1):hover{
+    background-color:lightgreen;
+    transition: 0.5s;
 }
 
-.task button:nth-child(1):hover{
-    background-color: #80e27ec9;
-    transition: 0.4s;
+.fa-trash-can{
+    color: #FF0033;
 }
 
-.task button:nth-child(2){
-    color: red;
-    background-color: white;
-    border: none;
-    width: 65px;
-    height: 51px;
+.icon-box div:nth-child(2):hover{
+    background-color:#FF9999;
+    transition: 0.5s;
 }
 
-.task button:nth-child(2):hover{
-    background-color: rgb(245, 160, 160);
-    transition: 0.4s;
+.list-area .icon-box div{
+    padding: 1em 1.75em;
+    border-radius: 1px;
 }
 
-.task div:nth-child(1){
-    padding-left: 10px;
+#task{
+    padding-left: 1em;
 }
 
 .task-done{
     text-decoration: line-through;
-    background-color: rgba(128, 128, 128, 0.212);
+    background-color: lightgray;
     width: 100%;
-    height: 51px;
+    height: 56px;
     display: flex;
     align-items: center;
-} 
+}
 
 .fa-arrow-rotate-left{
     color: gray;
 }
 
+#under-line{
+    padding: 0;
+    background-color: lightcoral;
+    width: 51px;
+    height: 4px;
+    position: absolute;
+    top: 56px;
+    left: 0px;
+    
+    transition: 0.5s;
+}

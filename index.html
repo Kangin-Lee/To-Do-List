@@ -14,33 +14,27 @@
 </head>
 <body>
     <div class="container">
-        <h1>To-Do List</h1>
-        <section class="input-area">
-            <span>
-                <i class="fa-solid fa-pencil"></i>
-                <input type="text" placeholder="오늘의 할 일은?" id="task-input">
-            </span>
-            
-            <button id="add-button">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                </svg>
-            </button>
-        </section>
-
-        <section class="task-area">
-            
-            <div class="task-tabs">
-                <div id = "under-line"></div>
+       <h1>To-Do List</h1>
+       <i class="fa-solid fa-pencil"></i>
+       <input type="text" id="user-input" placeholder="오늘의 할 일은?">
+       <button id="plus-btn" title="추가">+</button>
+       
+       <section id="task-area">
+            <div class="tabs">
+                <div id="under-line"></div>
                 <div id="all">All</div>
                 <div id="not-done">not Done</div>
                 <div id="done">Done</div>
             </div>
-
-            <div id="task-board">
+            
+            <div class="list-area" id="task-board">
+                <div class="task-area">
+                    
+                </div>
+                
             </div>
             
-        </section>
+       </section>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="main.js"></script>
